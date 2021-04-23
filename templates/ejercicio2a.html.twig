@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h3>P3 - a)</h3>
+    {% for i in 1..20 %}
+        <div> {{ title|upper }} -> loop {{ i }}</div>
+    {% endfor %}
+    
+{% endblock %}
