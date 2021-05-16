@@ -8,7 +8,15 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class Ejercicio2AController extends AbstractController
 {
-    // ...
+    /**
+     * @Route("/ejercicios", name="ejercicios")
+     */
+    public function ejercicios(Request $request)
+    {
+        $title = 'Todos los ejercicios';
+
+        return $this->render('ejercicios.html.twig', ['title' => $title]);
+    }
 
     /**
      * @Route("/ejercicio2a", name="ejercicio2a")
